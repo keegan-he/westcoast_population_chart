@@ -4,7 +4,7 @@ let massPopChart = new Chart(myChart, {
     data: {
         labels: ["Los Angeles", "San Diego", "San Jose", "San Francisco", "Seattle", "Portland", "Fresno", "Sacramento", "Longbeach", "Oakland"],
         datasets: [{
-            label: "Population",
+            label: "City Population",
             data: [
                 3999759,
                 1419516,
@@ -18,20 +18,22 @@ let massPopChart = new Chart(myChart, {
                 425195
 
             ],
-            backgroundColor: [
-                '#6ba1ff',
-                '#6ba1ff',
-                '#ffa96b',
-                '#fff36b',
-                '#e46bff'
-            ],
+            backgroundColor: '#990066',
+
+
             borderwidth: 1,
             borderColor: 'purple',
             hoverBorderWidth: 3,
             hoverBorderColor: '#000',
         }],
     },
+    
     options: {
+        plugins: {
+            colorschemes: {
+                scheme: 'office.BlueRed6',
+            }
+        },
         title: {
             display: true,
             text: 'West Coast City Population',
