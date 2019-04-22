@@ -1,6 +1,6 @@
 let myChart = document.getElementById("myChart").getContext("2d");
 let massPopChart = new Chart(myChart, {
-    type: 'bar', // other types of charts available: bar, horizontalBar, pie, line, doughnut, radar, polarArea
+    type: 'horizontalBar', // other types of charts available: bar, horizontalBar, pie, line, doughnut, radar, polarArea
     data: {
         labels: ["Los Angeles", "San Diego", "San Jose", "San Francisco", "Seattle", "Portland", "Fresno", "Sacramento", "Longbeach", "Oakland"],
         datasets: [{
@@ -28,7 +28,7 @@ let massPopChart = new Chart(myChart, {
 
 
             borderwidth: 1,
-            borderColor: 'purple',
+            borderColor: 'grey',
             hoverBorderWidth: 3,
             hoverBorderColor: '#000',
         }],
@@ -42,7 +42,7 @@ let massPopChart = new Chart(myChart, {
         },
         title: {
             display: true,
-            text: 'West Coast City Population',
+            text: 'West Coast Pop Chart',
             fontSize: 50,
         }
     }
