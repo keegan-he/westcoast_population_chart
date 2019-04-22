@@ -7,7 +7,7 @@ let massPopChart = new Chart(myChart, {
             label: "Population",
             data:[
             724745,
-            4256350,
+            647805,
             2555884,
             884363,
             3999759
