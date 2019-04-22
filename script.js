@@ -1,16 +1,16 @@
 let myChart = document.getElementById("myChart").getContext("2d");
 let massPopChart = new Chart(myChart, {
     type: 'bar', // other types of charts available: bar, horizontalBar, pie, line, doughnut, radar, polarArea
-    data:{
-        labels:["Seattle", "Portland", "Vancouver", "San Francisco", "Los Angeles"],
-        datasets:[{
+    data: {
+        labels: ["Seattle", "Portland", "Vancouver", "San Francisco", "Los Angeles"],
+        datasets: [{
             label: "Population",
-            data:[
-            724745,
-            647805,
-            2555884,
-            884363,
-            3999759
+            data: [
+                724745,
+                647805,
+                2555884,
+                884363,
+                3999759
             ],
             backgroundColor: [
                 '#6ba1ff',
@@ -18,9 +18,18 @@ let massPopChart = new Chart(myChart, {
                 '#ffa96b',
                 '#fff36b',
                 '#e46bff'
-
-            ]
+            ],
+            borderwidth: 1,
+            borderColor: 'purple',
+            hoverBorderWidth: 3,
+            hoverBorderColor: '#000',
         }],
     },
-    options:{}
-}); 
+    options: {
+        title: {
+            display: true,
+            text: 'West Coast City Population',
+            fontSize: 50,
+        }
+    }
+});
